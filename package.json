@@ -2,11 +2,13 @@
   "name": "relpath",
   "version": "0.0.1",
   "description": "Given two files return the relative path",
-  "main": "index.js",
+  "main": "dist/index.js",
   "bin": {
-    "relpath": "index.js"
+    "relpath": "dist/cli.js"
   },
-  "preferGlobal": "true",
+  "scripts": {
+    "prepare": "tsc"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/kelvinabrokwa/relpath.git"
@@ -20,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/kelvinabrokwa/relpath/issues"
   },
-  "homepage": "https://github.com/kelvinabrokwa/relpath"
+  "homepage": "https://github.com/kelvinabrokwa/relpath",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
 }
